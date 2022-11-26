@@ -28,6 +28,10 @@ let numString = "";
 let numArray = [];
 let operator;
 allButtons.forEach(button => button.addEventListener("click", () => {
+        display.textContent = buttonLogic(button);
+}));
+
+function buttonLogic(button) {
     const isOperator = button.parentElement?.classList.contains("operator");
     const isEqual    = button.parentElement?.classList.contains("equal");
     if (button.id === "clear") {
@@ -45,15 +49,9 @@ allButtons.forEach(button => button.addEventListener("click", () => {
                         button.id == "/" ? div : "error";
         } else if (isEqual) {
             numArray.push(numString);
-            display.textContent = `Result: ${operate(operator, numArray)}`;
-            numString = "";
-            numArray = [];
-            return
+            return `Result: ${operate(operator, numArray)}`;
         }
     }
-    display.textContent = numString;
-}));
+    return numString;
+}
 
-
-// rechnung soll im hintergrund ausgeführt werden und das ergebnis im Display angezeigt werden, wenn "=" gedrückt wird
-// operator sollen eigegebene Zahl an Array pushen 
