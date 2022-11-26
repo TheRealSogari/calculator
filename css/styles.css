@@ -1,3 +1,8 @@
+button {
+    width: 85px;
+    height: 85px;
+}
+
 .background {
     display: flex;
     justify-content: center;
@@ -12,21 +17,31 @@
 .calculator {
     display: flex;
     flex-direction: column;
+    width: 400px;
+    align-items: stretch;
 }
 
 .display {
     display: flex;
-    height: 30px;
+    height: 100px;
+    background-color: #0f0;
+    color: black;
+    font-size: 50px;
+    font-family: monospace;
+    margin: 10px;
+    justify-content: space-around;
 }
 
 .buttons {
     display:flex;
     flex-direction:column;
+    flex: 1;
 }
 
 .small-buttons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .numblock {
