@@ -19,6 +19,8 @@ button {
     flex-direction: column;
     width: 400px;
     align-items: stretch;
+    background-color: #3a3a3a;
+    border-radius: 20px;
 }
 
 .display {
@@ -29,6 +31,7 @@ button {
     font-size: 50px;
     font-family: monospace;
     margin: 10px;
+    margin-top: 20px;
     justify-content: space-around;
 }
 
@@ -36,6 +39,7 @@ button {
     display:flex;
     flex-direction:column;
     flex: 1;
+    margin: 10px;
 }
 
 .small-buttons {
@@ -52,4 +56,11 @@ button {
 .operator {
     display: flex;
     flex-direction: column;
+}
+
+.button {
+    font-size: 45px;
+    border: 2px solid #000;
+    background-color: #c8d8c0;
+
 }
