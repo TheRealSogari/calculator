@@ -1,0 +1,35 @@
+.background {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display:flex;
+    flex-direction:column;
+}
+
+.small-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.numblock {
+    display: flex;
+    flex-direction: column;
+}
+
+.operator {
+    display: flex;
+    flex-direction: column;
+}
